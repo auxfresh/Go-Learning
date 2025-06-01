@@ -1,6 +1,6 @@
 const express = require('express');
 const serverless = require('serverless-http');
-const { registerRoutes } = require('../../server/routes');
+const { registerRoutes } = require('../../shared/routes');
 
 const app = express();
 

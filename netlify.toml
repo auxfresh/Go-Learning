@@ -1,10 +1,10 @@
 [build]
-  base="client"
-  publish = "dist"
   command = "npm run build"
+  functions = "netlify/functions"
+  publish = "client/dist"
 
 [build.environment]
-  NODE_VERSION = "20"
+  NODE_VERSION = "18"
 
 [[redirects]]
   from = "/api/*"
@@ -17,5 +17,4 @@
   status = 200
 
 [functions]
-  directory = "netlify/functions"
   node_bundler = "esbuild"
